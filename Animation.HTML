@@ -15,11 +15,11 @@
 
 		
 		#naruto{
-			width: 50px;
-			height: 50px;
+			width: 100px;
+			height: 100px;
 			position: absolute;
-			left: 93%;
-			top: 85%;
+			left: 86%;
+			top: 78%;
 			z-index: 1;
 			-moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
@@ -30,10 +30,10 @@
 			
 		}
 		#sasuke{
-			width: 50px;
-			height: 50px;
+			width: 100px;
+			height: 100px;
 			position: absolute;
-			top: 85%;
+			top: 81%;
 			z-index: 1;
 
 		}
@@ -59,12 +59,7 @@
 			height: 410px;
 			position: absolute;
 			z-index: 999999;
-				-moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
+				
         
 
 		}
@@ -75,20 +70,21 @@
 </head>
 <body>
 <div id="container">
-	<img src="sasuke_2 .gif" id="sasuke">
-	<img src="naruto_by_anime18z-d5j1pmh.gif" id="naruto">
+	<img src="200.gif" id="sasuke">
+	<img src="naruto_rasengan_1_by_manuxz.gif" id="naruto">
 	
 	<img src="waterfall_animation_by_cloud6625-d7mmkdd.gif" id="waterfall">
 	<img src="1428011700_YukiWavesGif0.gif" id="water">
 	
-	<img src="tumblr_inline_nbp6v0Ttvb1rd4vr7.gif" id="show" style="display: none;">
+	<img src="Rasengan_VS__Chidori_by_pmaie.gif" id="show" style="display: none;">
 	
 	</div>
 </div>
 
 
+
 <input type="button" name="moveAnimation" value="move" onclick="move1(), move2(), displayNext()">
-<meta name="">
+<iframe width="560" height="315" style="display: none;" src="https://www.youtube.com/embed/wEWF2xh5E8s?autoplay=1&start=31" frameborder="0" allowfullscreen></iframe>
 <script type="text/javascript">
 
 
@@ -105,6 +101,7 @@ function move1(){
 			else{
 				pos++;
 				elem.style.left= pos + '%';
+				elem.style.top=pos + '%';
 			
 			}
 			
@@ -117,8 +114,8 @@ function move1(){
 	
 	function move2(){
 		var elem=document.getElementById('naruto');
-		var pos=100;
-		var id=setInterval(framedown,40);
+		var pos=89;
+		var id=setInterval(framedown,50);
 
 		function framedown(){
 			
@@ -128,6 +125,7 @@ function move1(){
 			else{
 				pos--;
 				elem.style.left= pos + '%';
+				elem.style.top=pos + '%';
 			}
 			
 				
